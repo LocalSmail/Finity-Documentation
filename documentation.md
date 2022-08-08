@@ -34,11 +34,7 @@ You can change the name from 'Finity' to whatever you want, But if your new and 
 | is\_dark\_mode (Boolean Value) | False                                              |   |
 | toggle\_key                    | <p>Enum.KeyCode.<strong>Semicolon</strong><br></p> |   |
 
-{% code lineNumbers="true" %}
-```
-is_dark_mode can be parsed when creating a new window
-```
-{% endcode %}
+You can set these before doing anything else.
 {% endtab %}
 {% endtabs %}
 
