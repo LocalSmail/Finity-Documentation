@@ -17,9 +17,7 @@ You can add the library to your exploit by doing the following:
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```lua
---[[local Finity = loadstring(game:HttpGet("https://raw.githubusercontent.com/LocalSmail//main/Library.Lua"), true)()]]
-
-Invalid link will update
+local Finity = loadstring(game:HttpGet("https://raw.githubusercontent.com/LocalSmail/Finity/main/Library.Lua"), true)()
 ```
 {% endcode %}
 
@@ -62,7 +60,7 @@ A Category can be made by doing the following:\
 
 
 ```lua
-FinityWindow:Category() 
+local FinityCategory = FinityWindow:Category()
 ```
 
 {% hint style="info" %}
