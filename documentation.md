@@ -17,7 +17,7 @@ You can add the library to your exploit by doing the following:
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```lua
-local Finity = loadstring(game:HttpGet("https://raw.githubusercontent.com/LocalSmail/Finity/main/Library.Lua"), true)()
+local Finity = loadstring(game:HttpGet("https://raw.githubusercontent.com/LocalSmail/Finity/main/Library.Lua"))()
 ```
 {% endcode %}
 
