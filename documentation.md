@@ -31,10 +31,14 @@ You can change the name from 'Finity' to whatever you want, But if your new and 
 {% tab title="Properties" %}
 | Property                       | Default Value                                      |   |
 | ------------------------------ | -------------------------------------------------- | - |
-| is\_dark\_mode (Boolean Value) | False                                              |   |
+| is\_dark\_mode (Boolean Value) | False (Deprecated)                                 |   |
 | toggle\_key                    | <p>Enum.KeyCode.<strong>Semicolon</strong><br></p> |   |
 
 You can set these before doing anything else.
+
+{% hint style="info" %}
+Top property is now Deprecated, It will no longer be able to be used...
+{% endhint %}
 {% endtab %}
 {% endtabs %}
 
@@ -53,6 +57,24 @@ You can Parse an Boolean Value to Enable or Disable Dark Mode for the GUI.
 {% endhint %}
 
 A Finity Window is what stores all the rest of your content within your GUI.
+
+{% tabs %}
+{% tab title="Properties" %}
+
+
+| Properties  | Default Value |   |
+| ----------- | ------------- | - |
+| Title       | nil           |   |
+| isdark      | false         |   |
+| HideToolTip | false         |   |
+| ToolTip     | nil           |   |
+| ShowOnMake  | false         |   |
+
+{% hint style="info" %}
+Although you hide the Tool Tip you might still need to add a string, It doesn't have to contain anything. It could be just `""`.&#x20;
+{% endhint %}
+{% endtab %}
+{% endtabs %}
 
 ### Categories
 
@@ -73,6 +95,10 @@ You can parse an String Value to give the Category an Name to help users disting
 | ---------------------------------------------------------------------- | ---------------------------------------------------------- | --------------- |
 | FinityWindow:Category(string name)                                     | Creates an Category, Can parse an string to give it a name | Finity Category |
 | <p>FinityWindow.ChangeToggleKey(<strong>Enum</strong> keycode)<br></p> | Changes the Toggle Key to the `Enum.Keycode` Set           | nil             |
+
+{% hint style="info" %}
+The default toggle key is the `Home` key.
+{% endhint %}
 {% endtab %}
 {% endtabs %}
 
