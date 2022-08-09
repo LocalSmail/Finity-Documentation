@@ -36,7 +36,7 @@ You can change the name from 'Finity' to whatever you want, But if your new and 
 
 You can set these before doing anything else.
 
-{% hint style="info" %}
+{% hint style="danger" %}
 Top property is now Deprecated, It will no longer be able to be used...
 {% endhint %}
 {% endtab %}
