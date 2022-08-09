@@ -17,7 +17,7 @@ You can add the library to your exploit by doing the following:
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```lua
-local Finity = loadstring(game:HttpGet("https://raw.githubusercontent.com/LocalSmail/Finity/main/Library"))()
+local Finity = loadstring(game:HttpGet("https://raw.githubusercontent.com/LocalSmail/Finity/main/Library", true))()
 ```
 {% endcode %}
 
@@ -25,6 +25,10 @@ Use the above line of code before you run any of Project Finity's UI methods.
 
 {% hint style="info" %}
 You can change the name from 'Finity' to whatever you want, But if your new and do not understand how to use Finity I recommend you stick with the current name.
+{% endhint %}
+
+{% hint style="danger" %}
+Removing `true` from the loadstring will make it return an nil error.
 {% endhint %}
 
 {% tabs %}
