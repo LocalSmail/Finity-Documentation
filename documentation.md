@@ -11,6 +11,10 @@ description: >-
 Project Finity has a variety of different modules for you to customize your cheat. Below is the documentation on how to use each of them.\
 
 
+{% hint style="danger" %}
+WIP || Work in progress, Haven't added most things yet.
+{% endhint %}
+
 ## Importation
 
 You can add the library to your exploit by doing the following:
