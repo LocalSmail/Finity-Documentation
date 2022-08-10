@@ -62,13 +62,12 @@ A Finity Window is what stores all the rest of your content within your GUI.
 {% tab title="Properties" %}
 
 
-| Properties  | Default Value               |   |
-| ----------- | --------------------------- | - |
-| Title       | nil                         |   |
-| isdark      | false                       |   |
-| HideToolTip | false                       |   |
-| ToolTip     | nil                         |   |
-| ShowOnMake  | false (Broken, leave empty) |   |
+| Properties  | Default Value |   |
+| ----------- | ------------- | - |
+| Title       | nil           |   |
+| isdark      | false         |   |
+| HideToolTip | false         |   |
+| ToolTip     | nil           |   |
 
 {% hint style="info" %}
 Although you hide the Tool Tip you might still need to add a string, It doesn't have to contain anything. It could be just `""`.&#x20;
