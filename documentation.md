@@ -31,21 +31,6 @@ Use the above line of code before you run any of Project Finity's UI methods.
 You can change the name from 'Finity' to whatever you want, But if your new and do not understand how to use Finity I recommend you stick with the current name.
 {% endhint %}
 
-{% tabs %}
-{% tab title="Properties" %}
-| Property                       | Default Value                                      |   |
-| ------------------------------ | -------------------------------------------------- | - |
-| is\_dark\_mode (Boolean Value) | False (Deprecated)                                 |   |
-| toggle\_key                    | <p>Enum.KeyCode.<strong>Semicolon</strong><br></p> |   |
-
-You can set these before doing anything else.
-
-{% hint style="danger" %}
-Top property is now Deprecated, It will no longer be able to be used...
-{% endhint %}
-{% endtab %}
-{% endtabs %}
-
 ### Finity Modules
 
 ### Windows
@@ -66,12 +51,19 @@ A Finity Window is what stores all the rest of your content within your GUI.
 {% tab title="Properties" %}
 
 
-| Properties  | Default Value |   |
-| ----------- | ------------- | - |
-| Title       | nil           |   |
-| isdark      | false         |   |
-| HideToolTip | false         |   |
-| ToolTip     | nil           |   |
+| Properties        | Default Value     |   |
+| ----------------- | ----------------- | - |
+| Title             | nil               |   |
+| isdark            | false             |   |
+| HideToolTip       | false             |   |
+| ToolTip           | nil               |   |
+| ChangeToggleKey() | Enum.KeyCode.Home |   |
+
+{% hint style="warning" %}
+The ChangeToggleKey() Doesn't fit inside the new() function, Define the window and then use the ChangeToggleKey() like this:&#x20;
+
+`FinityWindow.ChangeToggleWindow(Enum.KeyCode.Home)`
+{% endhint %}
 
 {% hint style="info" %}
 Although you hide the Tool Tip you might still need to add a string, It doesn't have to contain anything. It could be just `""`.&#x20;
