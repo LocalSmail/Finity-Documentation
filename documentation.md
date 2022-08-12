@@ -33,6 +33,28 @@ You can change the name from 'Finity' to whatever you want, But if your new and 
 
 ### Finity Modules
 
+### Toast Messages
+
+```lua
+finity.ToastMessage() -- Currently not much functionality
+```
+
+{% hint style="warning" %}
+This is currently a base for now, I may add more to it in the future if it is received well.
+{% endhint %}
+
+{% tabs %}
+{% tab title="Properties" %}
+
+
+| Properties | Default Value |   |
+| ---------- | ------------- | - |
+| Header     | nil           |   |
+| Content    | nil           |   |
+| Time       | nil           |   |
+{% endtab %}
+{% endtabs %}
+
 ### Windows
 
 {% code overflow="wrap" lineNumbers="true" %}
