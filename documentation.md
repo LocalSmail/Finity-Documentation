@@ -93,6 +93,27 @@ Although you hide the Tool Tip you might still need to add a string, It doesn't 
 {% endtab %}
 {% endtabs %}
 
+### Change Background Image
+
+```lua
+finity.ChangeBackgroundImage()
+```
+
+{% tabs %}
+{% tab title="Properties" %}
+| Properties   | Default Value |
+| ------------ | ------------- |
+| ImageID      | nil           |
+| Transparency | 0             |
+
+{% hint style="danger" %}
+If the image ID is invalid (Not a roblox asset ID) then it may break.
+{% endhint %}
+
+
+{% endtab %}
+{% endtabs %}
+
 ### Categories
 
 A Category can be made by doing the following:\
