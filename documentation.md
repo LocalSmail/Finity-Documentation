@@ -39,19 +39,17 @@ You can change the name from 'Finity' to whatever you want, But if your new and 
 finity.ToastMessage() -- Currently not much functionality
 ```
 
-{% hint style="warning" %}
-This is currently a base for now, I may add more to it in the future if it is received well.
-{% endhint %}
-
 {% tabs %}
 {% tab title="Properties" %}
 
 
-| Properties | Default Value |   |
-| ---------- | ------------- | - |
-| Header     | nil           |   |
-| Content    | nil           |   |
-| Time       | nil           |   |
+| Properties           | Default Value                  |   |
+| -------------------- | ------------------------------ | - |
+| TopText              | nil                            |   |
+| BottomTextBottomText | nil                            |   |
+| Time                 | nil                            |   |
+| Alert\_Type          | Info                           |   |
+| CustomBackgroundIcon | No functionality, leave as nil |   |
 {% endtab %}
 {% endtabs %}
 
