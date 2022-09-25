@@ -50,6 +50,16 @@ finity.ToastMessage() -- Currently not much functionality
 | Time                 | nil                            |   |
 | Alert\_Type          | Info                           |   |
 | CustomBackgroundIcon | No functionality, leave as nil |   |
+
+| Alert Types |   |   |
+| ----------- | - | - |
+| Info        |   |   |
+| Warning     |   |   |
+| Success     |   |   |
+
+{% hint style="info" %}
+Each Alert type has its own colour tied to it, Warning will be a Yellow-Orange, Info a sort of White and Success Green
+{% endhint %}
 {% endtab %}
 {% endtabs %}
 
