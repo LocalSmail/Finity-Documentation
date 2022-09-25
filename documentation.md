@@ -73,18 +73,23 @@ A Finity Window is what stores all the rest of your content within your GUI.
 {% tab title="Properties" %}
 
 
-| Properties        | Default Value     |   |
-| ----------------- | ----------------- | - |
-| Title             | nil               |   |
-| isdark            | false             |   |
-| HideToolTip       | false             |   |
-| ToolTip           | nil               |   |
-| ChangeToggleKey() | Enum.KeyCode.Home |   |
+| Properties                       | Default Value |   |
+| -------------------------------- | ------------- | - |
+| Title                            | nil           |   |
+| isdark                           | false         |   |
+| CustomTheme (Barely any func rn) | nil           |   |
+| HideToolTip                      | false         |   |
+| ToolTip                          | nil           |   |
+| ChangeToggleKey()                | Home          |   |
 
 {% hint style="warning" %}
 The ChangeToggleKey() Doesn't fit inside the new() function, Define the window and then use the ChangeToggleKey() like this:&#x20;
 
-`FinityWindow.ChangeToggleWindow(Enum.KeyCode.Home)`
+`FinityWindow.ChangeToggleWindow(Home)`&#x20;
+
+When adding a new key please define the button name: Home, Insert etc
+
+[https://developer.roblox.com/en-us/api-reference/enum/KeyCode](https://developer.roblox.com/en-us/api-reference/enum/KeyCode)
 {% endhint %}
 
 {% hint style="info" %}
