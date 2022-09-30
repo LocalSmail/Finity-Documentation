@@ -36,20 +36,20 @@ You can change the name from 'Finity' to whatever you want, But if your new and 
 ### Toast Messages
 
 ```lua
-finity.ToastMessage() -- Currently not much functionality
+finity.ToastMessage()
 ```
 
 {% tabs %}
 {% tab title="Properties" %}
 
 
-| Properties           | Default Value                  |   |
-| -------------------- | ------------------------------ | - |
-| TopText              | nil                            |   |
-| BottomTextBottomText | nil                            |   |
-| Time                 | nil                            |   |
-| Alert\_Type          | Info                           |   |
-| CustomBackgroundIcon | No functionality, leave as nil |   |
+| Properties           | Default Value |   |
+| -------------------- | ------------- | - |
+| TopText              | nil           |   |
+| BottomTextBottomText | nil           |   |
+| Time                 | nil           |   |
+| Alert\_Type          | Info          |   |
+| CustomBackgroundIcon | nil           |   |
 
 | Alert Types |   |   |
 | ----------- | - | - |
@@ -65,7 +65,27 @@ Each Alert type has its own colour tied to it, Warning will be a Yellow-Orange, 
 
 ### Downloading Custom Assets
 
-Currently no documentation for this yet.
+```lua
+ finity.DownloadCustomAsset()
+```
+
+{% tabs %}
+{% tab title="Properties" %}
+| Properties        | Default Value |
+| ----------------- | ------------- |
+| link              | None          |
+|  AssetName        | None          |
+| IsCustomThemeFile | None          |
+
+{% hint style="info" %}
+If you parse a link and then parse `IsCustomThemeFile` as `true`, You dont need to give it a name. Just leave `AssetName` as `nil` or as an empty string: `"" 👍`
+{% endhint %}
+
+{% hint style="warning" %}
+All of the custom assets downloaded (Apart for custom theme files) will be stored: `FinityGUI/assets/custom`. When trying to use the resource you downloaded then define it from that folder then adding the files name and extention: `FinityGUI/assets/custom/AssetName.png`
+{% endhint %}
+{% endtab %}
+{% endtabs %}
 
 ### Windows
 
@@ -85,19 +105,20 @@ A Finity Window is what stores all the rest of your content within your GUI.
 {% tab title="Properties" %}
 
 
-| Properties                       | Default Value |   |
-| -------------------------------- | ------------- | - |
-| Title                            | nil           |   |
-| isdark                           | false         |   |
-| CustomTheme (Barely any func rn) | nil           |   |
-| HideToolTip                      | false         |   |
-| ToolTip                          | nil           |   |
-| ChangeToggleKey()                | Home          |   |
+| Properties        | Default Value |   |
+| ----------------- | ------------- | - |
+| Title             | nil           |   |
+| isdark            | false         |   |
+| CustomTheme       | nil           |   |
+| CustomThemeName   | nil           |   |
+| HideToolTip       | false         |   |
+| ToolTip           | nil           |   |
+| ChangeToggleKey() | Home          |   |
 
 {% hint style="warning" %}
 The ChangeToggleKey() Doesn't fit inside the new() function, Define the window and then use the ChangeToggleKey() like this:&#x20;
 
-`FinityWindow.ChangeToggleWindow(Home)`&#x20;
+`FinityWindow.ChangeToggleWindow("Home")`&#x20;
 
 When adding a new key please define the button name: Home, Insert etc
 
@@ -106,6 +127,10 @@ When adding a new key please define the button name: Home, Insert etc
 
 {% hint style="info" %}
 Although you hide the Tool Tip you might still need to add a string, It doesn't have to contain anything. It could be just `""`.&#x20;
+{% endhint %}
+
+{% hint style="info" %}
+When using a custom theme. Make sure the Custom Theme is inside the `CustomTheme.lua` file when defining it from the list and that the name given is matching.
 {% endhint %}
 {% endtab %}
 {% endtabs %}
@@ -124,10 +149,12 @@ finity.ChangeBackgroundImage()
 | Transparency | 0             |
 
 {% hint style="danger" %}
-If the image ID is invalid (Not a roblox asset ID) then it may break.
+If the image ID is invalid (Not a roblox asset ID) then it may break
 {% endhint %}
 
-
+{% hint style="warning" %}
+Adding Custom Asset Support soon!
+{% endhint %}
 {% endtab %}
 {% endtabs %}
 
