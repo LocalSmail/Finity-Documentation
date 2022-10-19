@@ -36,7 +36,7 @@ You can change the name from 'Finity' to whatever you want, But if your new and 
 ### Toast Messages
 
 ```lua
-finity.ToastMessage()
+finity:ToastMessage()
 ```
 
 {% tabs %}
