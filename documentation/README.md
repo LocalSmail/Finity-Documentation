@@ -25,6 +25,11 @@ local Finity = loadstring(game:HttpGet("https://raw.githubusercontent.com/LocalS
 ```
 {% endcode %}
 
+<pre class="language-lua" data-overflow="wrap" data-line-numbers><code class="lang-lua"><strong>local FinityDev = loadstring(game:HttpGet("https://raw.githubusercontent.com/LocalSmail/Finity/Development/Library"))()
+</strong><strong>
+</strong><strong>-- Development version of finity. May be unstable, Not work with docs etc. Join the discord for updates: https://discord.gg/CenXcThBFv
+</strong><strong>-- Check the github: https://github.com/LocalSmail/Finity</strong></code></pre>
+
 Use the above line of code before you run any of Project Finity's UI methods.
 
 {% hint style="info" %}
@@ -49,30 +54,6 @@ finity:ToastMessage()
 
 {% hint style="info" %}
 Each Alert type has its own colour tied to it, Warning will be a Yellow-Orange, Info a sort of White and Success Green
-{% endhint %}
-{% endtab %}
-{% endtabs %}
-
-### Downloading Custom Assets
-
-```lua
- finity.DownloadCustomAsset()
-```
-
-{% tabs %}
-{% tab title="Properties" %}
-| Properties        | Default Value |
-| ----------------- | ------------- |
-| link              | None          |
-|  AssetName        | None          |
-| IsCustomThemeFile | None          |
-
-{% hint style="info" %}
-If you parse a link and then parse `IsCustomThemeFile` as `true`, You dont need to give it a name. Just leave `AssetName` as `nil` or as an empty string: `"" 👍`
-{% endhint %}
-
-{% hint style="warning" %}
-All of the custom assets downloaded (Apart for custom theme files) will be stored: `FinityGUI/assets/custom`. When trying to use the resource you downloaded then define it from that folder then adding the files name and extention: `FinityGUI/assets/custom/AssetName.png`
 {% endhint %}
 {% endtab %}
 {% endtabs %}
@@ -113,29 +94,6 @@ Although you hide the Tool Tip you might still need to add a string, It doesn't 
 
 {% hint style="info" %}
 When using a custom theme. Make sure the Custom Theme is inside the `CustomTheme.lua` file when defining it from the list and that the name given is matching.
-{% endhint %}
-{% endtab %}
-{% endtabs %}
-
-### Change Background Image
-
-```lua
-finity.ChangeBackgroundImage()
-```
-
-{% tabs %}
-{% tab title="Properties" %}
-| Properties   | Default Value |
-| ------------ | ------------- |
-| ImageID      | nil           |
-| Transparency | 0             |
-
-{% hint style="danger" %}
-If the image ID is invalid (Not a roblox asset ID) then it may break
-{% endhint %}
-
-{% hint style="warning" %}
-Adding Custom Asset Support soon!
 {% endhint %}
 {% endtab %}
 {% endtabs %}
@@ -214,7 +172,7 @@ A Finity Cheat is a cheat modules useful for hooking Call Backs to Toggles in or
 
 There are many different types of Cheat Modules. Here's a table to compare them all:
 
-<table><thead><tr><th>Cheat Module Type</th><th>Description</th><th data-hidden></th></tr></thead><tbody><tr><td>Checkbox</td><td>The checkbox is useful for having a user control the state of something. Fires callback with the new state of the checkbox.</td><td></td></tr><tr><td>Dropdown</td><td>The dropdown is useful for having a user choose from a list of things. Fires the callback with the option that was chosen as a string.</td><td></td></tr><tr><td>Slider</td><td>The slider is useful for having a user choose between a range of numbers. Fires the callback with the new value of the slider.</td><td></td></tr><tr><td>Textbox</td><td>The textbox is useful for having the user enter a custom value. Fires the callback with the new value of the textbox as a string.</td><td></td></tr><tr><td>Button</td><td>The button is nice for a user to trigger a specific action. Fires the callback when clicked with no arguments.</td><td></td></tr><tr><td>Keybind</td><td>The keybind is useful for performing an action when a key is pressed. Fires the callback when the key is changed or pressed.</td><td></td></tr><tr><td>Colorpicker</td><td>This is nice for choosing a certain color in range. Fires the callback each time the color is changed with the new Color3.</td><td></td></tr><tr><td>Label</td><td>The label is useful for displaying information to a user. Doesn't fire anything.</td><td></td></tr></tbody></table>
+<table><thead><tr><th>Cheat Module Type</th><th>Description</th><th>Data Types</th><th data-hidden></th></tr></thead><tbody><tr><td>Checkbox</td><td>The checkbox is useful for having a user control the state of something. Fires callback with the new state of the checkbox.</td><td>       <strong>NO DATA TYPES</strong></td><td></td></tr><tr><td>Dropdown</td><td>The dropdown is useful for having a user choose from a list of things. Fires the callback with the option that was chosen as a string.</td><td>default (String)<br>options (table) {} &#x3C;table</td><td></td></tr><tr><td>Slider</td><td>The slider is useful for having a user choose between a range of numbers. Fires the callback with the new value of the slider.</td><td>default (String)<br>min/max (int)<br>suffix (String)</td><td></td></tr><tr><td>Textbox</td><td>The textbox is useful for having the user enter a custom value. Fires the callback with the new value of the textbox as a string.</td><td>placeholder (String)</td><td></td></tr><tr><td>Button</td><td>The button is nice for a user to trigger a specific action. Fires the callback when clicked with no arguments.</td><td>       <strong>NO DATA TYPES</strong></td><td></td></tr><tr><td>Keybind</td><td>The keybind is useful for performing an action when a key is pressed. Fires the callback when the key is changed or pressed.</td><td>       <strong>NO DATA TYPES</strong><br><strong></strong><br><strong>Just click it and press a key.</strong><br><strong>Click backspace to remove the chosen key and try again before submiting.</strong></td><td></td></tr><tr><td>Colorpicker</td><td>This is nice for choosing a certain color in range. Fires the callback each time the color is changed with the new Color3.</td><td>       <strong>NO DATA TYPES</strong></td><td></td></tr><tr><td>Label</td><td>The label is useful for displaying information to a user. Doesn't fire anything.</td><td>       <strong>NO DATA TYPES</strong></td><td></td></tr></tbody></table>
 
 ### Debugging
 
