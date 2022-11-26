@@ -43,19 +43,9 @@ finity:ToastMessage()
 {% tab title="Properties" %}
 
 
-| Properties           | Default Value |   |
-| -------------------- | ------------- | - |
-| TopText              | nil           |   |
-| BottomTextBottomText | nil           |   |
-| Time                 | nil           |   |
-| Alert\_Type          | Info          |   |
-| CustomBackgroundIcon | nil           |   |
+<table><thead><tr><th>Properties</th><th>Default Value</th><th data-hidden></th></tr></thead><tbody><tr><td>TopText</td><td>nil</td><td></td></tr><tr><td>BottomTextBottomText</td><td>nil</td><td></td></tr><tr><td>Time</td><td>nil</td><td></td></tr><tr><td>Alert_Type</td><td>Info</td><td></td></tr><tr><td>CustomBackgroundIcon</td><td>nil</td><td></td></tr></tbody></table>
 
-| Alert Types |   |   |
-| ----------- | - | - |
-| Info        |   |   |
-| Warning     |   |   |
-| Success     |   |   |
+<table><thead><tr><th>Alert Types</th><th data-hidden></th><th data-hidden></th></tr></thead><tbody><tr><td>Info</td><td></td><td></td></tr><tr><td>Warning</td><td></td><td></td></tr><tr><td>Success</td><td></td><td></td></tr></tbody></table>
 
 {% hint style="info" %}
 Each Alert type has its own colour tied to it, Warning will be a Yellow-Orange, Info a sort of White and Success Green
@@ -105,15 +95,7 @@ A Finity Window is what stores all the rest of your content within your GUI.
 {% tab title="Properties" %}
 
 
-| Properties        | Default Value |   |
-| ----------------- | ------------- | - |
-| Title             | nil           |   |
-| isdark            | false         |   |
-| CustomTheme       | nil           |   |
-| CustomThemeName   | nil           |   |
-| HideToolTip       | false         |   |
-| ToolTip           | nil           |   |
-| ChangeToggleKey() | Home          |   |
+<table><thead><tr><th>Properties</th><th>Default Value</th><th data-hidden></th></tr></thead><tbody><tr><td>Title</td><td>nil</td><td></td></tr><tr><td>isdark</td><td>false</td><td></td></tr><tr><td>CustomTheme</td><td>nil</td><td></td></tr><tr><td>CustomThemeName</td><td>nil</td><td></td></tr><tr><td>HideToolTip</td><td>false</td><td></td></tr><tr><td>ToolTip</td><td>nil</td><td></td></tr><tr><td>ChangeToggleKey()</td><td>Home</td><td></td></tr></tbody></table>
 
 {% hint style="warning" %}
 The ChangeToggleKey() Doesn't fit inside the new() function, Define the window and then use the ChangeToggleKey() like this:&#x20;
@@ -232,16 +214,17 @@ A Finity Cheat is a cheat modules useful for hooking Call Backs to Toggles in or
 
 There are many different types of Cheat Modules. Here's a table to compare them all:
 
-| Cheat Module Type | Description                                                                                                                            |   |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- | - |
-| Checkbox          | The checkbox is useful for having a user control the state of something. Fires callback with the new state of the checkbox.            |   |
-| Dropdown          | The dropdown is useful for having a user choose from a list of things. Fires the callback with the option that was chosen as a string. |   |
-| Slider            | The slider is useful for having a user choose between a range of numbers. Fires the callback with the new value of the slider.         |   |
-| Textbox           | The textbox is useful for having the user enter a custom value. Fires the callback with the new value of the textbox as a string.      |   |
-| Button            | The button is nice for a user to trigger a specific action. Fires the callback when clicked with no arguments.                         |   |
-| Keybind           | The keybind is useful for performing an action when a key is pressed. Fires the callback when the key is changed or pressed.           |   |
-| Colorpicker       | This is nice for choosing a certain color in range. Fires the callback each time the color is changed with the new Color3.             |   |
-| Label             | The label is useful for displaying information to a user. Doesn't fire anything.                                                       |   |
+<table><thead><tr><th>Cheat Module Type</th><th>Description</th><th data-hidden></th></tr></thead><tbody><tr><td>Checkbox</td><td>The checkbox is useful for having a user control the state of something. Fires callback with the new state of the checkbox.</td><td></td></tr><tr><td>Dropdown</td><td>The dropdown is useful for having a user choose from a list of things. Fires the callback with the option that was chosen as a string.</td><td></td></tr><tr><td>Slider</td><td>The slider is useful for having a user choose between a range of numbers. Fires the callback with the new value of the slider.</td><td></td></tr><tr><td>Textbox</td><td>The textbox is useful for having the user enter a custom value. Fires the callback with the new value of the textbox as a string.</td><td></td></tr><tr><td>Button</td><td>The button is nice for a user to trigger a specific action. Fires the callback when clicked with no arguments.</td><td></td></tr><tr><td>Keybind</td><td>The keybind is useful for performing an action when a key is pressed. Fires the callback when the key is changed or pressed.</td><td></td></tr><tr><td>Colorpicker</td><td>This is nice for choosing a certain color in range. Fires the callback each time the color is changed with the new Color3.</td><td></td></tr><tr><td>Label</td><td>The label is useful for displaying information to a user. Doesn't fire anything.</td><td></td></tr></tbody></table>
+
+### Debugging
+
+```lua
+finity.EnableDebugging(status) -- Status only excepts true or false
+```
+
+{% hint style="warning" %}
+The status is a boolean value. This means it only accepts true or false, anything other than true or false will cause it to throw an error.
+{% endhint %}
 
 ## You have reached the end!
 
