@@ -58,7 +58,7 @@ You can download custom themes but wont be able to replace images within the gui
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```lua
-finity.ChangeBackgroundImage(ImageID, Transparnecy)
+finity:ChangeBackgroundImage(ImageID, Transparnecy)
 ```
 {% endcode %}
 
