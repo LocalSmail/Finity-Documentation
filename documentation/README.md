@@ -28,7 +28,8 @@ local Finity = loadstring(game:HttpGet("https://raw.githubusercontent.com/LocalS
 <pre class="language-lua" data-overflow="wrap" data-line-numbers><code class="lang-lua"><strong>local FinityDev = loadstring(game:HttpGet("https://raw.githubusercontent.com/LocalSmail/Finity/Development/Library"))()
 </strong><strong>
 </strong><strong>-- Development version of finity. May be unstable, Not work with docs etc. Join the discord for updates: https://discord.gg/CenXcThBFv
-</strong><strong>-- Check the github: https://github.com/LocalSmail/Finity</strong></code></pre>
+</strong><strong>-- Check the github: https://github.com/LocalSmail/Finity
+</strong></code></pre>
 
 Use the above line of code before you run any of Project Finity's UI methods.
 
@@ -81,7 +82,7 @@ A Finity Window is what stores all the rest of your content within your GUI.
 {% hint style="warning" %}
 The ChangeToggleKey() Doesn't fit inside the new() function, Define the window and then use the ChangeToggleKey() like this:&#x20;
 
-`FinityWindow.ChangeToggleWindow("Home")`&#x20;
+`FinityWindow:ChangeToggleWindow("Home")`&#x20;
 
 When adding a new key please define the button name: Home, Insert etc
 
@@ -116,7 +117,7 @@ You can parse an String Value to give the Category an Name to help users disting
 | Method                                                                 | Description                                                | Returns         |
 | ---------------------------------------------------------------------- | ---------------------------------------------------------- | --------------- |
 | FinityWindow:Category(string name)                                     | Creates an Category, Can parse an string to give it a name | Finity Category |
-| <p>FinityWindow.ChangeToggleKey(<strong>Enum</strong> keycode)<br></p> | Changes the Toggle Key to the `Enum.Keycode` Set           | nil             |
+| <p>FinityWindow:ChangeToggleKey(<strong>Enum</strong> keycode)<br></p> | Changes the Toggle Key to the `Enum.Keycode` Set           | nil             |
 
 {% hint style="info" %}
 The default toggle key is the `Home` key.
@@ -126,7 +127,8 @@ The default toggle key is the `Home` key.
 
 ### Sectors
 
-<pre class="language-lua" data-overflow="wrap"><code class="lang-lua"><strong>local FinitySector = FinityCategory:Sector()</strong></code></pre>
+<pre class="language-lua" data-overflow="wrap"><code class="lang-lua"><strong>local FinitySector = FinityCategory:Sector()
+</strong></code></pre>
 
 {% hint style="info" %}
 You can Parse an String Value to give the Sector an name to to help users distinguish between each Sector.
