@@ -70,7 +70,7 @@ If the image ID is invalid (Not a roblox asset ID) then it may break, Adding cus
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```lua
-self2:EnableThinProject()
+self2:EnableThinProject(Enable) -- true/false boolean.
 ```
 {% endcode %}
 
