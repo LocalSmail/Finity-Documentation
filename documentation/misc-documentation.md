@@ -79,3 +79,24 @@ This will allow you to use an legacy part of the Finity design which is the Thin
 {% hint style="warning" %}
 This, Like toast notifications are finity window functions and can be used after making a gui.
 {% endhint %}
+
+### Post/Get Requests
+
+{% code overflow="wrap" lineNumbers="true" %}
+```lua
+finity:requestfunc(data) -- Data will be used to send data and get returned data. It is a table so you will need to make a table then parse the needed arguments to use it. Refer to our Example's for a demo: https://github.com/LocalSmail/Finity/tree/main/Examples
+```
+{% endcode %}
+
+{% tabs %}
+{% tab title="Properties" %}
+| Property   | Description                                         | Default Value |
+| ---------- | --------------------------------------------------- | ------------- |
+| Url        | The url which will be interacted with.              | None          |
+| Method     | The method we will use. (Can only use POST or GET)  | None          |
+| Body       | The data returned after sending the request.        | None          |
+| Headers    | The Headers returned after sending the request.     | None          |
+| StatusCode | The Status Code returned after sending the request. | None          |
+{% endtab %}
+{% endtabs %}
+
