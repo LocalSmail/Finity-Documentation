@@ -58,12 +58,12 @@ You can download custom themes but wont be able to replace images within the gui
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```lua
-finity:ChangeBackgroundImage(ImageID, Transparnecy)
+finity:ChangeBackgroundImage(ImageID/Path, Transparnecy)
 ```
 {% endcode %}
 
-{% hint style="danger" %}
-If the image ID is invalid (Not a roblox asset ID) then it may break, Adding custom image support soon.
+{% hint style="warning" %}
+If the image you want to use is an roblox asset, Input the ID only (Thats all the function needs.). It will throw an error otherwise by default.
 {% endhint %}
 
 ### ThinProject
@@ -76,6 +76,6 @@ self2:EnableThinProject(Enable) -- true/false boolean.
 
 This will allow you to use an legacy part of the Finity design which is the ThinProject setting. This like its name, will make your project "thinner".
 
-{% hint style="info" %}
+{% hint style="warning" %}
 This, Like toast notifications are finity window functions and can be used after making a gui.
 {% endhint %}
