@@ -84,7 +84,7 @@ This, Like toast notifications are finity window functions and can be used after
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```lua
-finity:requestfunc(data) -- Data will be used to send data and get returned data. It is a table so you will need to make a table then parse the needed arguments to use it. Refer to our Example's for a demo: https://github.com/LocalSmail/Finity/tree/main/Examples
+finity:requestfunc({data}) -- Data will be used to send data and get returned data. It is a table so you will need to make a table then parse the needed arguments to use it. Refer to our Example's for a demo: https://github.com/LocalSmail/Finity/tree/main/Examples
 ```
 {% endcode %}
 
