@@ -76,6 +76,6 @@ self2:EnableThinProject(Enable) -- true/false boolean.
 
 This will allow you to use an legacy part of the Finity design which is the ThinProject setting. This like its name, will make your project "thinner".
 
-{% hint style="info" %}
+{% hint style="warning" %}
 This, Like toast notifications are finity window functions and can be used after making a gui.
 {% endhint %}
