@@ -100,3 +100,17 @@ finity:requestfunc({data}) -- Data will be used to send data and get returned da
 {% endtab %}
 {% endtabs %}
 
+### Hub Mode
+
+{% code overflow="wrap" lineNumbers="true" %}
+```lua
+finity:EnableHubMode(Enable) -- Boolean
+```
+{% endcode %}
+
+Hub mode allows for the developer of a hub to remove the potentially annoying credits print that finity prints by default. It gives them the option to hide it or show it.
+
+{% hint style="warning" %}
+If the value parsed is not a boolean type value it will send the credits by default and will print an error message.
+{% endhint %}
+
