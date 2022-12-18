@@ -6,9 +6,9 @@ description: >-
 
 # Documentation
 
-## Project Finity Library
+## Finity Reborn Library
 
-Project Finity has a variety of different modules for you to customize your cheat. Below is the documentation on how to use each of them.\
+Finity Reborn has a variety of different modules for you to customize your cheat. Below is the documentation on how to use each of them.\
 
 
 {% hint style="danger" %}
@@ -24,8 +24,6 @@ You can add the library to your exploit by doing the following:
 local Finity = loadstring(game:HttpGet("https://raw.githubusercontent.com/LocalSmail/Finity/main/Library"))()
 ```
 {% endcode %}
-
-
 
 Use the above line of code before you run any of Project Finity's UI methods.
 

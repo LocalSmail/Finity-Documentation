@@ -4,15 +4,15 @@ description: General information about Project Finity.
 
 # Introduction
 
-## **What is Project Finity?**
+## **What is** Finity Reborn?
 
-Project Finity is a user interface library (commonly known as a "UI library") designed for people like you to create easily nice-looking user interfaces for scripts that you dream of. It's primary purpose was to assist in my creation of scripts, but many others wanted to use it too. This brought me to the decision to allow you all to use it too!
+Finity Reborn is a user interface library (commonly known as a "UI library") designed for people like you to create easily nice-looking user interfaces for scripts that you dream of. It's primary purpose was to assist in my creation of scripts, but many others wanted to use it too. This brought me to the decision to allow you all to use it too!
 
-### **Why should I use Project Finity?**
+### **Why should I use** Finity Reborn**?**
 
-Project Finity is new, community-oriented, packed with features and it's easy to use! Anything the community wants for Project Finity is something I try my best to deliver.&#x20;
+Finity Reborn is a new, community-oriented gui Library, packed with features and it's easy to use! Anything the community wants for Finity Reborn is something I try my best to deliver.&#x20;
 
-### What does Project Finity have?
+### What does Finity Reborn have?
 
 
 
