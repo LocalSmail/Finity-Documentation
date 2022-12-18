@@ -25,11 +25,7 @@ local Finity = loadstring(game:HttpGet("https://raw.githubusercontent.com/LocalS
 ```
 {% endcode %}
 
-<pre class="language-lua" data-overflow="wrap" data-line-numbers><code class="lang-lua"><strong>local FinityDev = loadstring(game:HttpGet("https://raw.githubusercontent.com/LocalSmail/Finity/Development/Library"))()
-</strong><strong>
-</strong><strong>-- Development version of finity. May be unstable, Not work with docs, Be outdated/behind the main branch, etc. Join the discord for updates: https://discord.gg/CenXcThBFv
-</strong><strong>-- Check the github: https://github.com/LocalSmail/Finity
-</strong></code></pre>
+
 
 Use the above line of code before you run any of Project Finity's UI methods.
 
