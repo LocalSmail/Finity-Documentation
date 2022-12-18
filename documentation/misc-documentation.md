@@ -36,7 +36,7 @@ Creates new instances. This is used to create and set properties of newly create
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```lua
-finity:ImportCustomThemes(Theme_Name) -- the name that the theme is called.
+finity:ImportCustomThemes("theme name") -- the name that the theme is called.
 ```
 {% endcode %}
 
@@ -46,7 +46,7 @@ The theme name is taken/looked for from the custom themes lua file that can be f
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```lua
-finity:DownloadCustomAsset(link: string, AssetName: string, IsCustomThemeFile: boolean)
+finity:DownloadCustomAsset("link", "AssetName", IsCustomThemeFile: boolean)
 ```
 {% endcode %}
 
@@ -58,12 +58,12 @@ You can download custom themes but wont be able to replace images within the gui
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```lua
-finity:ChangeBackgroundImage(ImageID, Transparnecy)
+finity:ChangeBackgroundImage("ImageID/Path", Transparnecy: number)
 ```
 {% endcode %}
 
-{% hint style="danger" %}
-If the image ID is invalid (Not a roblox asset ID) then it may break, Adding custom image support soon.
+{% hint style="warning" %}
+If the image you want to use is an roblox asset, Input the ID only (Thats all the function needs.). It will throw an error otherwise by default.
 {% endhint %}
 
 ### ThinProject
@@ -76,6 +76,41 @@ self2:EnableThinProject(Enable) -- true/false boolean.
 
 This will allow you to use an legacy part of the Finity design which is the ThinProject setting. This like its name, will make your project "thinner".
 
-{% hint style="info" %}
+{% hint style="warning" %}
 This, Like toast notifications are finity window functions and can be used after making a gui.
 {% endhint %}
+
+### Post/Get Requests
+
+{% code overflow="wrap" lineNumbers="true" %}
+```lua
+finity:requestfunc({data}) -- Data will be used to send data and get returned data. It is a table so you will need to make a table then parse the needed arguments to use it. Refer to our Example's for a demo: https://github.com/LocalSmail/Finity/tree/main/Examples
+```
+{% endcode %}
+
+{% tabs %}
+{% tab title="Properties" %}
+| Property   | Description                                         | Default Value |
+| ---------- | --------------------------------------------------- | ------------- |
+| Url        | The url which will be interacted with.              | None          |
+| Method     | The method we will use. (Can only use POST or GET)  | None          |
+| Body       | The data returned after sending the request.        | None          |
+| Headers    | The Headers returned after sending the request.     | None          |
+| StatusCode | The Status Code returned after sending the request. | None          |
+{% endtab %}
+{% endtabs %}
+
+### Hub Mode
+
+{% code overflow="wrap" lineNumbers="true" %}
+```lua
+finity:EnableHubMode(Enable) -- Boolean
+```
+{% endcode %}
+
+Hub mode allows for the developer of a hub to remove the potentially annoying credits print that finity prints by default. It gives them the option to hide it or show it.
+
+{% hint style="warning" %}
+If the value parsed is not a boolean type value it will send the credits by default and will print an error message.
+{% endhint %}
+
