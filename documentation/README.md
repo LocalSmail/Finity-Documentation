@@ -6,9 +6,9 @@ description: >-
 
 # Documentation
 
-## Finity Reborn Library
+## Project Finity Library
 
-Finity Reborn has a variety of different modules for you to customize your cheat. Below is the documentation on how to use each of them.\
+Project Finity has a variety of different modules for you to customize your cheat. Below is the documentation on how to use each of them.\
 
 
 {% hint style="danger" %}
@@ -24,6 +24,12 @@ You can add the library to your exploit by doing the following:
 local Finity = loadstring(game:HttpGet("https://raw.githubusercontent.com/LocalSmail/Finity/main/Library"))()
 ```
 {% endcode %}
+
+<pre class="language-lua" data-overflow="wrap" data-line-numbers><code class="lang-lua"><strong>local FinityDev = loadstring(game:HttpGet("https://raw.githubusercontent.com/LocalSmail/Finity/Development/Library"))()
+</strong><strong>
+</strong><strong>-- Development version of finity. May be unstable, Not work with docs, Be outdated/behind the main branch, etc. Join the discord for updates: https://discord.gg/CenXcThBFv
+</strong><strong>-- Check the github: https://github.com/LocalSmail/Finity
+</strong></code></pre>
 
 Use the above line of code before you run any of Project Finity's UI methods.
 
@@ -76,7 +82,7 @@ A Finity Window is what stores all the rest of your content within your GUI.
 {% hint style="warning" %}
 The ChangeToggleKey() Doesn't fit inside the new() function, Define the window and then use the ChangeToggleKey() like this:&#x20;
 
-`FinityWindow:`ChangeToggleKey(`"Home")`&#x20;
+`FinityWindow:ChangeToggleWindow("Home")`&#x20;
 
 When adding a new key please define the button name: Home, Insert etc
 
@@ -168,7 +174,7 @@ A Finity Cheat is a cheat modules useful for hooking Call Backs to Toggles in or
 
 There are many different types of Cheat Modules. Here's a table to compare them all:
 
-<table><thead><tr><th>Cheat Module Type</th><th>Description</th><th>Data Types</th><th data-hidden></th></tr></thead><tbody><tr><td>Checkbox</td><td>The checkbox is useful for having a user control the state of something. Fires callback with the new state of the checkbox.</td><td>       <strong>NO DATA TYPES</strong></td><td></td></tr><tr><td>Dropdown</td><td>The dropdown is useful for having a user choose from a list of things. Fires the callback with the option that was chosen as a string.</td><td>default (String)<br>options (table) {} &#x3C;table</td><td></td></tr><tr><td>Slider</td><td>The slider is useful for having a user choose between a range of numbers. Fires the callback with the new value of the slider.</td><td>default (String)<br>min/max (int)<br>suffix (String)</td><td></td></tr><tr><td>Textbox</td><td>The textbox is useful for having the user enter a custom value. Fires the callback with the new value of the textbox as a string.</td><td>placeholder (String)</td><td></td></tr><tr><td>Button</td><td>The button is nice for a user to trigger a specific action. Fires the callback when clicked with no arguments.</td><td>       <strong>NO DATA TYPES</strong></td><td></td></tr><tr><td>Keybind</td><td>The keybind is useful for performing an action when a key is pressed. Fires the callback when the key is changed or pressed.</td><td>default (String)<br><br><strong>Just click it and press a key.</strong><br><strong>Click backspace to remove the chosen key and try again before submiting.</strong></td><td></td></tr><tr><td>Colorpicker</td><td>This is nice for choosing a certain color in range. Fires the callback each time the color is changed with the new Color3.</td><td>       <strong>NO DATA TYPES</strong></td><td></td></tr><tr><td>Label</td><td>The label is useful for displaying information to a user. Doesn't fire anything.</td><td>       <strong>NO DATA TYPES</strong></td><td></td></tr></tbody></table>
+<table><thead><tr><th>Cheat Module Type</th><th>Description</th><th>Data Types</th><th data-hidden></th></tr></thead><tbody><tr><td>Checkbox</td><td>The checkbox is useful for having a user control the state of something. Fires callback with the new state of the checkbox.</td><td>       <strong>NO DATA TYPES</strong></td><td></td></tr><tr><td>Dropdown</td><td>The dropdown is useful for having a user choose from a list of things. Fires the callback with the option that was chosen as a string.</td><td>default (String)<br>options (table) {} &#x3C;table</td><td></td></tr><tr><td>Slider</td><td>The slider is useful for having a user choose between a range of numbers. Fires the callback with the new value of the slider.</td><td>default (String)<br>min/max (int)<br>suffix (String)</td><td></td></tr><tr><td>Textbox</td><td>The textbox is useful for having the user enter a custom value. Fires the callback with the new value of the textbox as a string.</td><td>placeholder (String)</td><td></td></tr><tr><td>Button</td><td>The button is nice for a user to trigger a specific action. Fires the callback when clicked with no arguments.</td><td>       <strong>NO DATA TYPES</strong></td><td></td></tr><tr><td>Keybind</td><td>The keybind is useful for performing an action when a key is pressed. Fires the callback when the key is changed or pressed.</td><td>       <strong>NO DATA TYPES</strong><br><strong></strong><br><strong>Just click it and press a key.</strong><br><strong>Click backspace to remove the chosen key and try again before submiting.</strong></td><td></td></tr><tr><td>Colorpicker</td><td>This is nice for choosing a certain color in range. Fires the callback each time the color is changed with the new Color3.</td><td>       <strong>NO DATA TYPES</strong></td><td></td></tr><tr><td>Label</td><td>The label is useful for displaying information to a user. Doesn't fire anything.</td><td>       <strong>NO DATA TYPES</strong></td><td></td></tr></tbody></table>
 
 ### Debugging
 

@@ -1,5 +1,5 @@
 ---
-description: General information about Project Finity.
+description: General information about Finity Reborn.
 ---
 
 # Introduction
