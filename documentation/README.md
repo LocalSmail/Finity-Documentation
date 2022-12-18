@@ -82,7 +82,7 @@ A Finity Window is what stores all the rest of your content within your GUI.
 {% hint style="warning" %}
 The ChangeToggleKey() Doesn't fit inside the new() function, Define the window and then use the ChangeToggleKey() like this:&#x20;
 
-`FinityWindow:ChangeToggleWindow("Home")`&#x20;
+`FinityWindow:`ChangeToggleKey(`"Home")`&#x20;
 
 When adding a new key please define the button name: Home, Insert etc
 
