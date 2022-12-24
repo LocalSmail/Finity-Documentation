@@ -71,7 +71,7 @@ A Finity Window is what stores all the rest of your content within your GUI.
 {% tab title="Properties" %}
 
 
-<table><thead><tr><th>Properties</th><th>Default Value</th><th data-hidden></th></tr></thead><tbody><tr><td>Title</td><td>nil</td><td></td></tr><tr><td>isdark</td><td>false</td><td></td></tr><tr><td>CustomTheme</td><td>nil</td><td></td></tr><tr><td>CustomThemeName</td><td>nil</td><td></td></tr><tr><td>HideToolTip</td><td>false</td><td></td></tr><tr><td>ToolTip</td><td>nil</td><td></td></tr><tr><td>ChangeToggleKey()</td><td>Home</td><td></td></tr></tbody></table>
+<table><thead><tr><th>Properties</th><th>Default Value</th><th data-hidden></th></tr></thead><tbody><tr><td>Title</td><td>nil</td><td></td></tr><tr><td>isdark</td><td>false</td><td></td></tr><tr><td>CustomTheme</td><td>nil</td><td></td></tr><tr><td>CustomThemeName</td><td>nil</td><td></td></tr><tr><td>HideToolTip</td><td>false</td><td></td></tr><tr><td>ToolTip</td><td>nil</td><td></td></tr></tbody></table>
 
 {% hint style="info" %}
 Although you hide the Tool Tip you might still need to add a string, It doesn't have to contain anything. It could be just `""`.&#x20;

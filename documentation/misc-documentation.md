@@ -6,19 +6,6 @@ description: >-
 
 # Misc Documentation
 
-### ChangeToggleKey
-
-```lua
-local Finity = loadstring(game:HttpGet("https://raw.githubusercontent.com/LocalSmail/Finity/main/Library"))()
--- runs the finity gui
-
-local FinityWindow = Finity.new()
--- creates a new window
-
-FinityWindow:ChangeToggleKey("Semicolon")
--- changes the toggle key to: ; instead of the home key.
-```
-
 ### Debugging
 
 ```etlua
