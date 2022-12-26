@@ -6,6 +6,24 @@ description: >-
 
 # Misc Documentation
 
+### ChangeToggleKey
+
+```lua
+FinityWindow:ChangeToggleKey(KeyCdoe)
+```
+
+{% hint style="warning" %}
+The KeyCodes are the names of the keys that are on your keyboard, If they are not typed correctly then it will still be applied but will not work. E.g:
+
+ChangeToggleKey("e") -- This will set it to the letter e but it will not work when you press E as it is not typed correctly. Capitalise the e letter and it will work
+{% endhint %}
+
+{% hint style="info" %}
+Dont know what keycodes there are and the names for each one? Heres roblox's official documentation: [https://create.roblox.com/docs/reference/engine/enums/KeyCode](https://create.roblox.com/docs/reference/engine/enums/KeyCode)
+
+KeyCode names are what is at the end of: `Enum.KeyCode. The keycode name is accepted as an acceptable toggle but only when entered correctly (View the warn above for more understanding). You can enter the entire Enum.KeyCode.Keyname as it will strip the input of:` Enum.KeyCode. `Just make sure the key name is correct.`
+{% endhint %}
+
 ### Debugging
 
 ```etlua
