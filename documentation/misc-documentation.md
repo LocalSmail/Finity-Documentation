@@ -84,7 +84,7 @@ finity:ChangeBackgroundImage("ImageID/Path", Transparnecy: number)
 If the image you want to use is an roblox asset, Input the ID only (Thats all the function needs.). It will throw an error otherwise by default.
 {% endhint %}
 
-### ThinProject
+### Thin Project
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```lua
@@ -98,26 +98,6 @@ This will allow you to use an legacy part of the Finity design which is the Thin
 This, Like toast notifications are finity window functions and can be used after making a gui.
 {% endhint %}
 
-### Post/Get Requests
-
-{% code overflow="wrap" lineNumbers="true" %}
-```lua
-finity:requestfunc({data}) -- Data will be used to send data and get returned data. It is a table so you will need to make a table then parse the needed arguments to use it. Refer to our Example's for a demo: https://github.com/LocalSmail/Finity/tree/main/Examples
-```
-{% endcode %}
-
-{% tabs %}
-{% tab title="Properties" %}
-| Property   | Description                                         | Default Value |
-| ---------- | --------------------------------------------------- | ------------- |
-| Url        | The url which will be interacted with.              | None          |
-| Method     | The method we will use. (Can only use POST or GET)  | None          |
-| Body       | The data returned after sending the request.        | None          |
-| Headers    | The Headers returned after sending the request.     | None          |
-| StatusCode | The Status Code returned after sending the request. | None          |
-{% endtab %}
-{% endtabs %}
-
 ### Hub Mode
 
 {% code overflow="wrap" lineNumbers="true" %}
@@ -126,9 +106,9 @@ finity:EnableHubMode(Enable) -- Boolean
 ```
 {% endcode %}
 
-Hub mode allows for the developer of a hub to remove the potentially annoying credits print that finity prints by default. It gives them the option to hide it or show it.
+Hub mode allows for the developer of a hub to remove the potentially annoying credits print that Finity prints by default. It gives them the option to hide it or show it.
 
 {% hint style="warning" %}
-If the value parsed is not a boolean type value it will send the credits by default and will print an error message.
+If the value parsed is not a Boolean type value it will send the credits by default and will print an error message.
 {% endhint %}
 
